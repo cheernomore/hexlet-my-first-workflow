@@ -1,0 +1,11 @@
+name: hello-world
+on: push
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+      - uses: actions/checkout@v2
+
+      - name: Print hello world
+      - run: make say-hello
