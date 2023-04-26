@@ -5,7 +5,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout repository
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Print hello world
-      - run: make say-hello
+        run: make say-hello
